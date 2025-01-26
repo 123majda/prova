@@ -1,0 +1,18 @@
+// script.js
+
+function showAnswer(answerId) {
+    var answers = {
+        answer1: "The capital of France is Paris.",
+        answer2: "The square root of 16 is 4.",
+        answer3: "William Shakespeare wrote 'Romeo and Juliet'."
+    };
+
+    // Show the popup and display the correct answer
+    document.getElementById("popup-text").innerText = answers[answerId];
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+    // Close the popup
+    document.getElementById("popup").style.display = "none";
+}
